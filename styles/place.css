@@ -1,0 +1,106 @@
+/*LN - Using  SA flag colours for global variables */
+
+:root {
+    --primary-color: #007749; 
+    --secondary-color: #FFB81C; 
+    --text-color: #333;
+    --light-color: #f8f9fa;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: var(--text-color);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.place-title {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.place-title h1 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.place-title img {
+    width: 100%;
+    height: auto;
+    margin: 1rem 0;
+    border-radius: 5px;
+}
+
+.basic-info, .data-content, .weather-content {
+    background-color: var(--light-color);
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.basic-info p, .data-content p, .weather-content p {
+    margin: 0.5rem 0;
+}
+
+.weather {
+    margin-top: 2rem;
+    position: relative; 
+}
+
+.weather-content {
+    background-color: var(--light-color);
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    display: flex; 
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.mobile-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0.5rem; 
+    align-self: center; 
+}
+
+/* LN - Wider view styles */
+@media (min-width: 768px) {
+    .weather-content {
+        position: relative;
+        padding-right: 60px; 
+    }
+    
+    .weather::after {
+        content: "⛅";
+        font-size: 2rem;
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        float: none; 
+    }
+
+    .mobile-icon {
+        display: none;
+    }
+}
+
+footer {
+    margin-top: 2rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 5px;
+}
+
+footer a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

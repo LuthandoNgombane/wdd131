@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mthatha, South Africa | WDD131 Project</title>
+    <meta name="description" content="Basic information about Mthatha, South Africa">
+    <meta name="author" content="Luthando Ngombane">
+    <meta name="keywords" content="Mthatha, South Africa, travel, tourism, history, culture">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <main>
+        <section class="place-title">
+            <h1>Mthatha, South Africa</h1>
+            
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/mthatha-small.webp">
+                <source media="(min-width: 601px)" srcset="images/mthatha-large.webp">
+                <img src="images/mthatha.webp" alt="View of Mthatha" loading="lazy">
+            </picture>
+            
+            <div class="basic-info">
+                <p>Province: Eastern Cape</p>
+                <p>Population: 140,000</p>
+                <p>Elevation: 692m</p>
+                <p>Founded: 1879</p>
+                <p>Timezone: SAST (UTC+2)</p>
+            </div>
+        </section>
+
+        <section class="data">
+            <h2>Key Facts</h2>
+            <div class="data-content">
+                <p>Former Name: Umtata</p>
+                <p>Local Municipality: King Sabata Dalindyebo</p>
+                <p>District: OR Tambo</p>
+                <p>Climate: Humid subtropical</p>
+                <p>Main Language: Xhosa</p>
+                <p>Notable Person: Nelson Mandela</p>
+            </div>
+        </section>
+
+        <section class="weather">
+            <h2>Weather</h2>
+            <div class="weather-content">
+                <img src="images/weather-con.svg" alt="Weather icon" class="mobile-icon">
+                <p>Temperature: 22°C</p>
+                <p>Wind Speed: 10 km/h</p>
+                <p>Conditions: Partly Cloudy</p>
+                <p>Wind Chill: <span id="windchill">N/A</span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Luthando Ngombane | Mthatha, South Africa</p>
+        <p>Last Modified: <span id="lastmodified"></span></p>
+        <p>Wireframe: <a href="https://app.moqups.com/IIRA7YxoAY7l3dNNey4ZzOTcOCnIZgqo/view/page/ad64222d5" target="_blank" rel="noopener"  >View Design Reference</a></p>
+    </footer>
+</body>
+</html>
