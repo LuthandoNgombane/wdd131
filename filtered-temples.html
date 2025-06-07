@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 768px)">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button class="hamburger">☰</button>
+        <nav>
+            <a href="#" data-filter="all" class="active">Home</a>
+            <a href="#" data-filter="old">Old</a>
+            <a href="#" data-filter="new">New</a>
+            <a href="#" data-filter="large">Large</a>
+            <a href="#" data-filter="small">Small</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Temples</h1>
+        <h2>Temple Gallery</h2>
+        <div class="gallery"></div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Luthando Ngombane | Last Modified: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/filtered-temples.js"></script>
+</body>
+</html>
