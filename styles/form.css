@@ -1,0 +1,119 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f9f4;
+  color: #333;
+  line-height: 1.6;
+}
+header {
+  background-color: #2a623d;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+main {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+form, main > div, main > h2 + p + dl + p {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #4a7043;
+}
+.required {
+  color: #2a623d;
+  font-weight: bold;
+}
+select, input, textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+input[type="submit"] {
+  background-color: #2a623d;
+  color: #fff;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+}
+input[type="submit"]:hover {
+  background-color: #4a7043;
+}
+.rating {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.rating input[type="radio"] {
+  display: none;
+}
+.rating label {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #ccc;
+}
+.rating input[type="radio"]:checked + label,
+.rating label:hover {
+  color: #2a623d;
+}
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+}
+dt {
+  font-weight: bold;
+  color: #2a623d;
+}
+dd {
+  margin: 0;
+}
+h2 {
+  color: #4a7043;
+  font-family: 'Montserrat', sans-serif;
+}
+footer {
+  background-color: #2a623d;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+footer a {
+  color: #f4f9f4;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+@media (min-width: 768px) {
+  main {
+    max-width: 800px;
+  }
+}
